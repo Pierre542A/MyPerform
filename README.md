@@ -1,1 +1,1 @@
-Développement d'une application mobile à des fins de visualisation de facture avec système de connexion
+Voici une sélection de mes projets de développement, réalisés dans des contextes variés, que ce soit pour des raisons personnelles, académiques ou professionnelles.
