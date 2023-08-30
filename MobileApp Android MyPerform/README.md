@@ -1,4 +1,3 @@
-Groupe B - Sylvain, Guillaume, Pierre, Nicolas
-
-Développement d'une application mobile à des fins de visualisation de facture avec système de connexion
-Développement d'un ajout sur l'application de l'entreprise Cogélis
+Conception d'une application mobile Android dédiée à la gestion et à la visualisation de factures.
+L'application intègre une visionneuse PDF personnalisée pour le téléchargement et la consultation de factures, un système d'authentification de compte, ainsi que des fonctionnalités permettant de consulter les détails de son abonnement et les informations associées au compte utilisateur.
+Le tout est réalisé en conformité avec une charte graphique spécifique.
