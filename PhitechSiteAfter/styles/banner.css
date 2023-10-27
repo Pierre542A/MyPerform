@@ -1,0 +1,254 @@
+/* GÉNÉRALE */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* TYPOGRAPHIE */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, nav{
+  font-family: 'Nurom-Bold', sans-serif;
+}
+
+p, a, span, ul, h4, h5, li{
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Roboto;
+  src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 600;
+  src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+
+/* HEADER */
+
+header{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fdc216;
+}
+
+#logo{
+  width: 110px;
+}
+
+/* ADD BY Pierre */
+
+.nwBanner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hamburger {
+  display: none !important;
+}
+
+.sideMenu {
+  display: none;
+  right: -100%;
+  transition: right 0.3s ease-in-out;
+}
+
+.sideMenu.open {
+  right: 0;
+}
+
+.lesMenus {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.menuTop > ul > li:not(:last-child) {
+  margin-right: 1.5vw;
+}
+
+.menuTop ul .linkItem {
+  transition: transform 0.25s ease-out;
+  cursor: pointer;
+}
+
+.menuTop ul .linkItem:hover {
+    transform: translateY(-1px);
+}
+
+.menuTop ul .linkItem:active {
+    transform: translateY(1px);
+}
+
+.menuTop {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid black;
+}
+
+.menuBottom {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+}
+
+.menuBottom ul li {
+  position: relative;
+  display: inline-block;
+}
+
+.menuBottom ul.mainMenu > li:not(:last-child) {
+  margin-right: 2.5vw; /* ou la valeur de marge que vous préférez */
+}
+
+.menuBottom > ul > li:not(:has(.btBoutique))::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7.5;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.25s ease-in-out;
+}
+
+.menuBottom ul li:not(:has(.btBoutique)):hover::after {
+  width: 100%;
+}
+
+.btBoutique {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7.5px 17.5px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btBoutique img {
+  margin-right: 10px;
+  width: 20px;  /* ou la largeur que vous voulez */
+  height: auto; /* maintient les proportions de l'image */
+  transition: transform 0.25s all;
+}
+
+.btBoutique:hover {
+  cursor: pointer;
+}
+
+.btBoutique:active {
+  transform: translateY(1px);
+}
+
+.boutiqueT {
+  display: none;
+}
+
+@media only screen and (max-width: 1099px) {
+  .menuTop {
+    height: 45px;
+  }
+  
+  .menuBottom {
+    height: 65px;
+  }
+
+  .boutiqueT {
+    display: block;
+  }
+
+  .boutiqueB {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .lesMenus {
+    display: none;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .sideMenu {
+    display: flex;
+    position: fixed;
+    top: 110px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #3c3c3c;
+    color: white;
+    overflow-y: auto;
+    transition: right 0.5s ease-in-out;
+    z-index: 10;
+  }
+
+  .sideMenu.active {
+    right: 0;
+  }
+
+  .mainMenu2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mainMenu2 > li {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1ps solid red;
+    width: 100%;
+  }
+
+  .mainMenu2 > li > a {
+    font-size: 1.5em;
+    text-align: left;
+    width: 100%;
+  }
+
+  .sousMenu2 .sousSousMenu2, .contentOption2 {
+    display: none;
+  }
+
+}
