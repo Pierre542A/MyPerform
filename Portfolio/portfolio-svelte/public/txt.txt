@@ -1,0 +1,12 @@
+[A-propos > Compétences]
+"Imaginez l'espace d'un instant, un enfant, pris d'amour et de passion, se consacra jour et nuit dans l'optique de comprendre les bases mêmes de la notion d'algorithmie. Ainsi, le chemin commença, et il acquit en compétences."
+
+[Compétences > Expériences]
+"Fort de ses compétences nouvellement acquises, il décida de les mettre en pratique en se lançant dans des projets divers et variés."
+
+[Expériences > Portfolio]
+"Ses projets variés lui permirent de constituer un portfolio. Il avait créé des applications innovantes, résolu des problèmes complexes et contribué à la communauté informatique."
+
+[Portfolio > Contact]
+"Il décida donc de se jeter dans le grand bain. Prêt à partager sont expertise et à relever de nouveaux défies, si vous souhaitez en savoir plus sur son travail ou collaborer avec lui, n'hésitez pas à le contacter !"
+        
